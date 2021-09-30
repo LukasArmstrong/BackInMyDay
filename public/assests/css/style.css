@@ -1,5 +1,5 @@
 .Splash-screen-bg{
-  background-image:url(bg.jpg);
+  background-image:url(/assests/images/bg.jpg); /* Doesn't work on local files but works on the web site*/
   background-repeat:repeat;
   background-size: 500px;
   background-origin: content-box, padding-box;
