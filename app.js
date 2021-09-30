@@ -22,9 +22,9 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static("public"));
 
 
-/* Mongoose --> MongoDB Setup
+// Mongoose --> MongoDB Setup
 const mongoose = require('mongoose');
-const connectionURI = mongodb://localhost:27017;
+const connectionURI = 'mongodb://192.168.3.63:27017/BIMD';
 mongoose.connect(connectionURI, {    //local install instead?
     useNewUrlParser: true,
     useUnifiedTopology: true
@@ -39,7 +39,7 @@ var imageSchema = new mongoose.Schema({
     imageName: String
 });
 var Image = mongoose.model("Image", imageSchema);
-*/
+
 
 /* later on:
 var imageSchema = new mongoose.Schema({
@@ -78,7 +78,7 @@ var imageSchema = new mongoose.Schema({
 app.get("/imageUpload", (req, res)=>{
     res.status(200).sendFile(__dirname + "/imageUpload.html");
 });
-app.post("/imageUpload", (req, res)=>{
+app.post("/", (req, res)=>{
     const postRequest = req.body;
     console.log(postRequest);
 

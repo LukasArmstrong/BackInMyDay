@@ -7,6 +7,9 @@ $("#splash_search").keypress(function(e){
 $('#UploadBtn').click(function() {
   $('#uploadModalCenter').modal('show')
 });
+
+$('')
+
 function initMap() {
   const myLatLng = { lat: -25.363, lng: 131.044 };
   const myLatLng1 = { lat: 25.363, lng: -131.044 };
