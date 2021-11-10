@@ -20,7 +20,9 @@ $('#UploadBtn').click(function() {
   $('#uploadModalCenter').modal('show');
 });
 
-
+function test(message){
+  alert(message)
+}
 
 let imagesPreview = function(input, placeToInsertImagePreview) {
   if (input.files) {
@@ -63,12 +65,13 @@ function getCookie(cname) {
 
 function checkCookie() {
   let visit = getCookie("Visited-BIMD");
-  if (visit != "" and !window.location.href.includes("localhost")) {
+  if (visit != "" && !window.location.href.includes('localhost')) {
     $(".Splash-screen").slideUp();
   } else {
      setCookie("Visited-BIMD", true, 30);
   }
 }
+
 function initMap() {
   const myLatLng = { lat: 38.212852184793654,  lng: -85.76085961907903 };
   const myLatLng1 = { lat: 25.363, lng: -131.044 };
