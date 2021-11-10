@@ -2,7 +2,7 @@ $(document).ready(function() {
   $("#input-files").on("change", function() {
     imagesPreview(this, "div.preview-images");
   });
-
+  checkCookie()
 });
 
 $("#splash_search").keypress(function(e){
@@ -66,7 +66,7 @@ function checkCookie() {
   if (visit != "") {
     $(".Splash-screen").slideUp();
   } else {
-     setCookie("visited-BIMD", true, 30);
+     setCookie("Visited-BIMD", true, 30);
   }
 }
 function initMap() {
