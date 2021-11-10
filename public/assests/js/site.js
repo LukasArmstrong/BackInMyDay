@@ -20,7 +20,9 @@ $('#UploadBtn').click(function() {
   $('#uploadModalCenter').modal('show');
 });
 
-
+function test(message){
+  alert(message)
+}
 
 let imagesPreview = function(input, placeToInsertImagePreview) {
   if (input.files) {
