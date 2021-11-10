@@ -63,7 +63,7 @@ function getCookie(cname) {
 
 function checkCookie() {
   let visit = getCookie("Visited-BIMD");
-  if (visit != "") {
+  if (visit != "" and !window.location.href.includes("localhost")) {
     $(".Splash-screen").slideUp();
   } else {
      setCookie("Visited-BIMD", true, 30);
