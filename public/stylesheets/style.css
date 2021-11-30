@@ -1,0 +1,86 @@
+/*{
+  position: relative;
+  box-sizing: border-box;
+}
+
+.insta-wrap{
+
+}
+
+.insta-content{
+  h3{
+    text-transform: uppercase;
+    letter-spacing: 0.5em;
+    font-size: 12px;
+    font-weight: 700;
+    text-align: center;
+    padding: $padding*5 0;
+  }
+}*/
+
+.text{
+  color: white;
+  
+}
+
+body {
+  height: 100%;
+  margin: 0px;
+  padding-top: 0;
+}
+
+.content{
+  padding-top: 97px;
+}
+
+.feed-row{
+  margin-top: 0px;
+}
+
+.photo-wrap{
+  background: rgba(255,255,255,0.6);
+  margin: 15px;
+  padding: 15px
+}
+.photobox{
+  margin-top: 0px;
+}
+
+.bg-repeat{
+  background-image:url(/images/support/bg.jpg); /* Doesn't work on local files but works on the web site*/
+  background-repeat:repeat;
+  background-size: 500px;
+  background-origin: content-box, padding-box;
+  background-position: -18.5em 0em
+}
+.Splash-screen {
+    position:fixed;
+    width:100%;
+    height:100%;
+    top:0px;
+    left:0px;
+    z-index:1000;
+}
+.BIMD_logo{
+  background-image:url(/images/support/bg_primeteronly_denser.jpg);
+  background-size: 500px;
+  /*margin-top: 54px;*/
+}
+.BIMD_search{
+  border-radius: 20px;
+}
+.invisible {
+    display: none;
+    visibility: hidden;
+}
+a{
+  color: white;
+}
+#map {
+  height: 100%;
+}
+
+.
+
+/* Optional: Makes the sample page fill the window. */
+html,

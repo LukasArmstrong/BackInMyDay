@@ -1,0 +1,74 @@
+html{
+  width: 100%;
+  height: 100%
+}
+
+body{
+  margin: 0px;
+  font-size: 16;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.nav{
+
+}
+
+.nav_container{
+  height: 15%;
+  background-size: 25%;
+  padding: 5px;
+
+}
+
+.nav_colum_div_left, .nav_colum_div_middle, .nav_colum_div_right {
+  display: inline-block;
+  *display: inline; zoom: 1;
+  vertical-align: middle;
+  font-size: 12px;
+  width: 33%;
+  hight: 100%;
+}
+
+.nav_colum_div_left{
+}
+
+
+.nav_logo{
+  height: 100%;
+}
+
+.nav_colum_div_middle{
+}
+
+.nav_search_list{
+  overflow: auto;
+}
+
+.nav_search_list_item{
+  display: inline;
+  font-size: 5vh;
+}
+
+.nav_utils_list{
+  overflow: auto;
+
+}
+
+.nav_utils_list_item{
+  display: inline;
+  padding: 3px;
+  font-size: 5vh;
+}
+
+.nav_colum_div_right{
+}
+
+.nav_login_list{
+  overflow: auto;
+}
+
+.nav_login_list_item{
+}

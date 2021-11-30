@@ -1,0 +1,42 @@
+Find best way to access mangoDB using the mangoDB Node.js Driver (API)
+Find out how to add images to markers w/link
+Find out how to add list to the side of the map w/link
+
+https://exiftool.org/TagNames/EXIF.html
+
+
+
+Map Page
+Picture List page
+Page with Picture data
+
+/
+/createuser
+/login
+/guest
+
+
+/guest/create
+/guest/list
+/guest/map
+/guest/photo/:photoid
+
+/user
+/user/:userid/update
+/user/:userid/delete
+
+/user/:userid/list
+/user/:userid/map
+/user/:userid/photo/:photoid
+
+/user/:userid/personal/create
+/user/:userid/personal/list
+/user/:userid/personal/map
+/user/:userid/personal/photo/:photoid
+/user/:userid/personal/photo/:photoid/update
+/user/:userid/personal/photo/:photoid/delete
+
+
+
+
+
