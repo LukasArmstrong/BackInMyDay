@@ -1,30 +1,23 @@
 {
   "name": "bimd",
-  "version": "1.0.0",
-  "description": "Back in my my day they didn't ask for descriptions",
-  "main": "app.js",
+  "version": "0.0.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "node ./bin/www",
+    "devstart": "nodemon ./bin/www"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LukasArmstrong/BackInMyDay.git"
-  },
-  "keywords": [
-    "bimd"
-  ],
-  "author": "Lukas Armstrong,  Ian Nobile, Kevin Smith, Brantly Lockhart, Madi Mays, Richard Gunasena",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/LukasArmstrong/BackInMyDay/issues"
-  },
-  "homepage": "https://github.com/LukasArmstrong/BackInMyDay#readme",
   "dependencies": {
-    "body-parser": "^1.19.0",
+    "async": "^3.2.1",
+    "cookie-parser": "~1.4.4",
+    "debug": "~2.6.9",
     "exif": "^0.6.0",
-    "express": "^4.17.1",
-    "lodash": "^4.17.21",
-    "multer": "^1.4.3",
-    "multer-gridfs-storage": "^5.0.2"
+    "express": "~4.16.1",
+    "http-errors": "~1.6.3",
+    "mongoose": "^6.0.8",
+    "morgan": "~1.9.1",
+    "pug": "2.0.0-beta11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.13"
   }
 }

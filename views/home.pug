@@ -1,0 +1,58 @@
+extends layout.pug
+
+block nav
+  nav.navbar.navbar-expand-xl.bg-dark
+    div.col-sm-auto(href='#')
+      img(src='images/support/AppLogo_whiteOutline.png' width='100' height='69' alt='')
+    div.col
+      div.collapse.navbar-collapse.d-flex.justify-content-between(id='navbarSupportedContent')
+        ul.navbar-nav.d-flex.justify-content-start
+          li.nav-item.active
+            a.nav-link(href='#') Map/List View
+              span.sr-only (current)
+          li.nav-item.active
+            a.nav-link(href='#') About
+              span.sr-only (current)
+        ul.navbar-nav(color='white')
+          li.text Welcome Message
+        ul.navbar-nav
+          li
+            form.form-inline.my-2.my-lg-0
+              input.form-control.mr-sm-2(type='search', placeholder='People, Places, Things', aria-label='Search')
+              button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+          li.nav-item.active
+            a.nav-link(href='#') Sign Up
+              span.sr-only (current)
+          li.nav-item.active
+            a.nav-link(href='#') Log In
+              span.sr-only (current)
+block content
+  #map
+
+
+    //block nav
+      nav.navbar.navbar-expand-xl.bg-dark
+        div.col-sm-auto(href='#')
+          img(src='images/support/AppLogo_whiteOutline.png' width='100' height='69' alt='')
+        div.col
+          div.collapse.navbar-collapse.d-flex.justify-content-between(id='navbarSupportedContent')
+            ul.navbar-nav.d-flex.justify-content-start
+              li.nav-item.active
+                a.nav-link(href='#') Map/List View
+                  span.sr-only (current)
+              li.nav-item.active
+                a.nav-link(href='#') About
+                  span.sr-only (current)
+            ul.navbar-nav(color='white')
+              li.text Welcome Message
+            ul.navbar-nav
+              li
+                form.form-inline.my-2.my-lg-0
+                  input.form-control.mr-sm-2(type='search', placeholder='People, Places, Things', aria-label='Search')
+                  button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+              li.nav-item.active
+                a.nav-link(href='#') Sign Up
+                  span.sr-only (current)
+              li.nav-item.active
+                a.nav-link(href='#') Log In
+                  span.sr-only (current)
