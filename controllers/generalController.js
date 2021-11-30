@@ -21,7 +21,7 @@ exports.gen_index_get = function (req, res, next) {
     },
   }, function(err,results){
     console.log('callback function');
-    res.render('image', {title: 'Back In My Day Home', error:err, data: results});
+    res.render('insta', {title: 'Back In My Day Home', error:err, data: results});
   });
 };
 
