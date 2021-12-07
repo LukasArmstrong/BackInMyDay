@@ -13,17 +13,17 @@ exports.photo_create_post = function (req, res, next) {
 
 //display list of personal photos
 exports.photo_list_personal = function(req, res, next) {
-  res.send('NOT DONE: list personal photos');
+  res.render('User_insta', {link: "/user/:userid/map", linkname:'Map'});
 };
 
 //display map of personal photos
 exports.photo_map_personal = function(req, res, next) {
-  res.send('NOT DONE: map personal photos');
+  res.render('User_insta', {link: "/user/:userid/list", linkname:'List'});
 };
 
 //display photo information
 exports.photo_detail = function (req, res, next) {
-  res.send('NOT DONE:  single photo information');
+  res.send('NOT DONE:  single photo information' + req.param.id);
 };
 
 //display photo update form GET
