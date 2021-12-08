@@ -7,3 +7,5 @@ Repo for CSE 550 project "Back In My Day"
   - press the "Upload" button in the top right corner
   - Click Browse and browse for image
   - Click Submit to upload the image 
+3. To see the Map view:
+  - click the map button
