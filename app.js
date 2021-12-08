@@ -14,7 +14,7 @@ var usersRouter = require('./routes/users');
 
 
 //database connection-----------------------------------------------------------
-var mongoDB = "mongodb://192.168.3.63:27017/BIMD";
+var mongoDB = 'mongodb://127.0.0.1/BIMDDB';
 mongoose.connect(mongoDB, {useNewUrlParser: true, useUnifiedTopology: true});
 var db = mongoose.connection;
 //bind to error events
@@ -32,7 +32,8 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, '/public')));
+
 
 //routing
 app.use('/', catalogRouter);

@@ -1,13 +1,17 @@
 var Photo = require('../models/Photo');
+var exifPull = require('../public/javascripts/exifPull');
+var photoAddDB = require('../public/javascripts/photoAddDB');
+var exifAddDB = require('../public/javascripts/photoAddDB');
+
 
 //display list of all photos
 exports.photo_list_all = function(req, res, next) {
-  res.send('NOT DONE: list all photos');
+  res.render('Guest_insta', {link: "/guest/map", linkname:'Map'});
 };
 
 //display map of all photos
 exports.photo_map_all = function(req, res, next) {
-  res.send('NOT DONE: map all photos');
+  res.render('Guest_map', {link: "/guest/list", linkname:'List'});
 };
 
 //display photo information
@@ -23,7 +27,9 @@ exports.photo_create_get = function (req, res, next) {
 
 //handle photo create on POST
 exports.photo_create_post = function (req, res, next) {
-  res.send('NOT DONE: photo create POST');
+  console.log(req.file);
+;
+  //exifPull(file, )
 };
 
 //Display photo delete form on GET

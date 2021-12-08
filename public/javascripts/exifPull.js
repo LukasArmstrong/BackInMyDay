@@ -3,9 +3,11 @@ var path = require('path');
 var process = require('process');
 var exif = require('exif');
 
+//'./../images/' + imgName
+
 module.exports = function (imgName, callback){
   try {
-       exif({ image :  './../images/' + imgName }, function (error, exifData) {
+       exif({ image :  imgName }, function (error, exifData) {
           if (error){console.log('Error in: ' + error.message + " " + imgName);}
           else{
               //console.log(exifData); // Do something with your data!
